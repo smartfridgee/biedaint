@@ -1,6 +1,23 @@
 var can = document.getElementById("canvas");
 var ctx = can.getContext("2d");
 
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+function resizeWindow(){	
+	if(w > 2000){
+		can.width = 1800;
+		can.height = 900;
+	}
+	else if(w < 2000){
+		can.width = 1500;
+		can.height = 900;
+	}
+}
+
+resizeWindow();
+
+
 function mouseIn(event) {
 	var x = event.clientX;
 	var y = event.clientY;
