@@ -11,7 +11,7 @@ function resizeWindow(){
 	}
 	else if(w < 2000){
 		can.width = 1500;
-		can.height = 900;
+		can.height = 850;
 	}
 }
 
