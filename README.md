@@ -1,2 +1,2 @@
 # biedaint
-Poor janky paint
+poor janky paint
