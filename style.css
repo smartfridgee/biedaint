@@ -1,0 +1,113 @@
+body{
+	background-color: #424242;
+	font-family: 'Calibri';
+	width: 2200px;
+	cursor: default;
+	transition: 0.2s;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#canvas{
+	background-color: white;
+	float: left;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px black;
+}
+
+.clr{
+	margin-top: 5px;
+}
+
+#color{
+	width: 120px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+}
+
+.clrt{
+	padding-top: 7px;
+	float: left;
+}
+
+.input{
+	padding-left: 5px;
+	float: left;
+}
+
+.eraser{
+	margin-top: 9px;
+}
+
+#functions{
+	float: left;
+	margin-left: 15px;
+	border: 1px solid black;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 0px 5px black;
+}
+
+#title{
+	float: left;
+	clear: both;
+	color: white;
+	font-size: 50px;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: 10px;
+	-webkit-text-stroke: 1px black;
+	text-shadow: 0px 0px 5px black;
+}
+
+#title:first-letter {
+    text-transform: uppercase;
+}
+
+#svalue{
+	width: 23px;
+	text-align: center;
+}
+
+.shape{
+	margin-top: 10px;
+}
+
+.settings{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#refresh{
+	color: black;
+	transition: 0.3s;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#refresh:hover{
+	color: grey;
+	transition: 0.3s;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#theme{
+	color: black;
+	transition: 0.3s;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#theme:hover{
+	color: grey;
+	transition: 0.3s;
+	font-weight: bold;
+	cursor: pointer;
+}

@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html lang="pl-PL">
+    <head>
+		<meta charset="utf-8">
+		<title>Biedaint</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<canvas id="canvas" width="1800" height="900" border="1" onmousedown="mouseIn(event)" onmousemove="mousePaint(event)" onmouseup="mouseOut(event)"></canvas>
+		
+		<div id="functions"><text class="settings">Ustawienia Ołówka</text>
+			<div class="clr">
+			<text class="clrt">Kolor</text> <div class="input"><input id="color" type="color"></div>
+			</div>
+			
+			<br><br>
+			Rozmiar
+			<input type="range" id="size" min="1" max="500" value="20" onmousemove="sizeChange()">
+			<input type="text" disabled id="svalue" value="20">
+			
+			<br>
+			
+			<div class="eraser">
+			Gumka <input type="checkbox" id="eraser" onclick="setEraser()" value="1">
+			</div>
+			
+			<div class = "shape">
+			Kształt <select name = "shape" id = "shape" onchange="changeShape()" value="circle">
+				<option value="circle">Koło</option>
+				<option value="square">Kwadrat</option>
+			</select>
+			</div>
+			
+			<text id="text" value="1"></text>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br>
+		<div id="functions"><text class="settings">Ustawienia Strony</text>
+			<br>
+			<b>></b> <text id="refresh" onclick="canvasRefresh()">Odśwież płutno</text>
+			<br>
+			<b>></b> <text id="theme" onclick="changeTheme()">Jasny motyw</text>
+		</div>
+		<text id="title">biedaint ultimate</text>
+		<script src="script.js"></script>
+    </body>
+</html>
